@@ -1,0 +1,114 @@
+@media(max-width:992px) {
+    .top a, .top span, .top p {
+        font-size: 16px;
+    }
+    menu li {
+        padding: 2% 0;
+        border-bottom: 1px solid transparent;
+    }
+    .about ul {
+        padding: 0 0%;
+    }
+    .aboutus li {
+        font-size: 15px;
+    }
+    .service aside li {
+        font-size: 14px;
+    }
+    .service article h2 {
+        font-size: 2vw;
+    }
+    .service article li, .service article p {
+        font-size: 1.5vw;
+    }
+    .ser-foot {
+        margin-top: 46%;
+    }
+    .service article {
+        padding: 0px 2%;
+    }
+    .cont-footer {
+        margin-top: 80px;
+    }
+    .mn,
+    .partners .mun.mn{
+        display: none;
+    }
+    .partners .fl1 {
+        height: 14vw;
+    }
+}
+
+@media(max-width:776px) {
+    .menu ul.fl {
+        flex-direction: column;
+        position: absolute;
+        background: #fff;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 3;
+        display: none;
+    }
+    .bar {
+        display: block;
+    }
+    .top .fl p:last-of-type {
+        display: none;
+    }
+    .minwidth {
+        width: 84%;
+    }
+    .toggler1, .toggler2, .toggler3, .toggler4, .toggler5 {
+        font-size: 3.5vw;
+    }
+    .aboutus {
+        display: block;
+    }
+    .about p {
+        font-size: 2vw
+    }
+    .about h2, .partners h2 {
+        font-size: 3vw;
+    }
+    .service {
+        display: none;
+    }
+    .mobSevice {
+        display: block;
+    }
+    .ser-foot {
+        margin-top: 26%;
+    }
+  
+    .contact .fl{
+        display: block;
+        height: auto;
+    }
+    .contact p {
+        padding: 1% 0% 1% 7%;
+        font-size: 3vw;
+    }
+    .contact span {
+        font-size: 3.7vw;
+    }
+    .cont-footer {
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:680px) {
+    .top .fl {
+        display: block;
+    }
+    .top a, .top span, .top p {
+        font-size: 13px;
+        margin: 0;
+    }
+    header img {
+        width: 100%;
+    }
+    .top a, .top span, .top p {
+        font-size: 10px;
+    }
+}

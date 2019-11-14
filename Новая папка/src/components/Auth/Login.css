@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+section{
+  min-height: 100vh;
+  background: linear-gradient(#5b85f8,#9cb3f3,#d2daf0,#5b85f8);
+}
+section .form-group{
+  margin-bottom: 20px!important;
+}
+section button{
+ background:#5b85f8!important;
+}

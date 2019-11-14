@@ -1,0 +1,83 @@
+.header{
+  padding-top: 5%;
+}
+.header h1{
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.progress,.progress-bar{
+  height: 10px;
+  border-radius: 9px;
+}
+.progress-bar{
+  background: #5b85f8;
+}
+.progress{
+  background: #e3e6f0;
+}
+.header span{
+  color: #5b85f8;
+  font-weight: 600;
+}
+h2{
+ text-transform: capitalize;
+ margin-bottom: 20px;
+ font-weight: bold;
+}
+h3{
+ text-transform: capitalize;
+ margin-bottom: 15px;
+ font-size: 18px;
+ color: #000;
+ font-weight: bold;
+}
+.text label{
+  text-transform: capitalize;
+  color:#adadad;
+  font-size: 15px;
+}
+.actions .btn-warning {
+  width: 100%;
+  background: #ff8d3b !important;
+}
+.form-group {
+  margin-bottom: 8px!important;
+}
+.radio input{
+  display: none;
+}
+.radio{
+  position: relative;
+  font-size: 15px;
+}
+.radio .checkmark{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 0;
+ top:4px;
+}
+.radio label{
+  padding-left: 30px;
+}
+.radio .checkmark::after{
+  content: '';
+  width: 6px;
+  height: 6px;
+  top:3.5px;
+  left: 3.5px;
+  position: absolute;
+  border-radius: 50%;
+}
+.radio input:checked ~label{
+  color:red!important
+}
+.radio input:checked + span{
+  border-color:#5b85f8;
+}
+.radio input:checked + span::after{
+  background:#5b85f8;
+}

@@ -1,0 +1,242 @@
+
+.ttg-reaktions-btn, .ttg-reaktions-label {
+	height: 36px; 
+	line-height: 36px;
+	font-size: 12px;
+	margin: 0;
+	padding: 0 4px;
+	text-align: center;
+	min-width: 50px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	display: inline-block;
+	float: left;
+	text-transform: uppercase;
+	color: inherit;
+}
+.ttg-reaktions-all .ttg-reaktions-readonly   {
+	opacity: 0.6; 
+	font-weight: bold;
+}
+
+.ttg-reaktions-btn:hover {
+
+
+}
+.ttg-reaktions-btn-disabled, .ttg-reaktions-btn.ttg-reaktions-btn-disabled:hover {
+	color: #ccc;
+	filter: none;
+	cursor: default;
+}
+.ttg-reaktions-btn.ttg-Ratings-Feedback {
+	padding-left: 1rem;
+	padding-right: 0.5rem;
+}
+.ttg-reaktions-col1 {
+	display: inline-block;
+	clear: both;
+}
+.ttg-reaktions-btn i {
+	line-height: 36px;
+	font-size: 14px;
+	vertical-align: middle;
+}
+.ttg-reaktions-btn [class^="socicon-"] {
+	line-height: 36px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+.ttg-reaktions-btn-love {
+	background: red;
+	color: #fff;
+	padding-left: 8px;
+	padding-right: 6px;
+}
+.ttg-reaktions-btn-love i {
+	font-size: 20px;
+	vertical-align: middle;
+	top: 3px;
+}
+.ttg-btn-facebook {
+	background-color: #3e5b98;
+	color: #fff;
+}
+.ttg-btn-facebook [class^="socicon-"] {
+	font-size: 15px;
+}
+.ttg-btn-twitter {
+	background-color: #4da7de;
+	color: #fff;
+}
+.ttg-btn-googleplus {
+	background-color: #dd4b39;
+	color: #fff;
+}
+.ttg-btn-googleplus [class^="socicon-"] {
+	font-size: 22px;
+	padding-left: 2px;
+}
+.ttg-btn-pinterest {
+	background-color: #c92619;
+	color: #fff;
+}
+.ttg-btn-pinterest [class^="socicon-"] {
+	font-size: 15px;
+}
+.ttg-btn-share:hover, .ttg-reaktions-btn-love:hover {
+	color: #fff;
+	filter: brightness(130%);
+}
+.ttg-reaktions-right {
+	float: right;
+}
+
+
+
+/**
+ *
+ *	Star rating
+ * 
+ */
+form.ttg-reaktions {
+	display: inline-block;
+  	float: left;
+  	padding: 2px ;
+  	height: 36px;
+}
+form.ttg-reaktions .ttg-reaktions-stars {
+  background: url('img/stars.png') repeat-x 0 0;
+  width: 150px;
+  margin: 0 auto;
+ 
+}
+.ie7 form.ttg-reaktions .ttg-reaktions-stars {
+  *zoom: 1;
+}
+form.ttg-reaktions .ttg-reaktions-stars:before,
+form.ttg-reaktions .ttg-reaktions-stars:after {
+  display: table;
+  content: "";
+}
+form.ttg-reaktions .ttg-reaktions-stars:after {
+  clear: both;
+}
+form.ttg-reaktions .ttg-reaktions-stars input[type="radio"] {
+	cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+form.ttg-reaktions .ttg-reaktions-stars input[type="radio"]+label:before,
+form.ttg-reaktions .ttg-reaktions-stars input[type="radio"]+label:after {
+	display: none !important;
+}
+form.ttg-reaktions .ttg-reaktions-stars input[type="radio"].ttg-reaktions-star-5:checked ~ span {
+  width: 100%;
+}
+form.ttg-reaktions .ttg-reaktions-stars input[type="radio"].ttg-reaktions-star-4:checked ~ span {
+  width: 80%;
+}
+form.ttg-reaktions .ttg-reaktions-stars input[type="radio"].ttg-reaktions-star-3:checked ~ span {
+  width: 60%;
+}
+form.ttg-reaktions .ttg-reaktions-stars input[type="radio"].ttg-reaktions-star-2:checked ~ span {
+  width: 40%;
+}
+form.ttg-reaktions .ttg-reaktions-stars input[type="radio"].ttg-reaktions-star-1:checked ~ span {
+  width: 20%;
+}
+form.ttg-reaktions .ttg-reaktions-stars label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0!important;
+  padding: 0!important;
+  text-indent: -999em;
+  float: left;
+  position: relative;
+  z-index: 10;
+  background: transparent!important;
+  cursor: pointer;
+}
+form.ttg-reaktions .ttg-reaktions-stars label:hover ~ span {
+  background-position: 0 -30px;
+}
+form.ttg-reaktions .ttg-reaktions-stars label.ttg-reaktions-star-5:hover ~ span {
+  width: 100% !important;
+}
+form.ttg-reaktions .ttg-reaktions-stars label.ttg-reaktions-star-4:hover ~ span {
+  width: 80% !important;
+}
+form.ttg-reaktions .ttg-reaktions-stars label.ttg-reaktions-star-3:hover ~ span {
+  width: 60% !important;
+}
+form.ttg-reaktions .ttg-reaktions-stars label.ttg-reaktions-star-2:hover ~ span {
+  width: 40% !important;
+}
+form.ttg-reaktions .ttg-reaktions-stars label.ttg-reaktions-star-1:hover ~ span {
+  width: 20% !important;
+}
+form.ttg-reaktions .ttg-reaktions-stars span {
+  display: block;
+  width: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30px;
+  background: url('img/stars.png') repeat-x 0 -60px;
+  -webkit-transition: -webkit-width 0.5s;
+  -moz-transition: -moz-width 0.5s;
+  -ms-transition: -ms-width 0.5s;
+  -o-transition: -o-width 0.5s;
+  transition: width 0.5s;
+}
+
+
+.ttg-reaktions-all {
+	display: block;
+	clear: both;	
+	width: 100%;
+	display:block;
+	padding: 0;
+
+}
+.ttg-reaktions-all .ttg-reaktions-viewscounter{
+	border-right: 1px solid #ddd;
+	padding-right: 10px;
+	margin-right: 8px;
+}
+.ttg-reaktions-all:after {
+	content: " ";
+	display: block;
+	clear: both;	
+	width: 100%;
+}
+.ttg-reaktions-all > a, .ttg-reaktions-all > span, .ttg-reaktions-all > form.ttg-reaktions {
+	/*display: inline;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	display: table-cell;*/
+}
+
+@media only screen and (min-width:700px){
+	.ttg-reaktions-col2 {
+		display: inline-block;
+		clear: none;
+	}
+	.ttg-reaktions-col2 {
+		float: right;
+	}
+	.ttg-reaktions-btn.ttg-reaktions-readonly  i::before {
+		top: -1px;
+		position: relative;
+	}
+}
+
+
+
+
+
+
